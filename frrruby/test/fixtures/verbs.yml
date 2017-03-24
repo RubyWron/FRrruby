@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  I_present: MyString
+  you_present: MyString
+  he_present: MyString
+  we_present: MyString
+  pluralYou_present: MyString
+  they_present: MyString
+
+two:
+  I_present: MyString
+  you_present: MyString
+  he_present: MyString
+  we_present: MyString
+  pluralYou_present: MyString
+  they_present: MyString
