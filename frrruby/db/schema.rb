@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170324130450) do
+ActiveRecord::Schema.define(version: 20170329135358) do
+
+  create_table "adjectives", force: :cascade do |t|
+    t.string   "base"
+    t.string   "fem_singular"
+    t.string   "masc_plural"
+    t.string   "fem_plural"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
   create_table "verbs", force: :cascade do |t|
     t.string   "infinitive"

@@ -1,0 +1,37 @@
+<%= form_for(adjective) do |f| %>
+  <% if adjective.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(adjective.errors.count, "error") %> prohibited this adjective from being saved:</h2>
+
+      <ul>
+      <% adjective.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :base %>
+    <%= f.text_field :base %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fem_singular %>
+    <%= f.text_field :fem_singular %>
+  </div>
+
+  <div class="field">
+    <%= f.label :masc_plural %>
+    <%= f.text_field :masc_plural %>
+  </div>
+
+  <div class="field">
+    <%= f.label :fem_plural %>
+    <%= f.text_field :fem_plural %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
