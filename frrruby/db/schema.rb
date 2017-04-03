@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170329135358) do
+ActiveRecord::Schema.define(version: 20170403102608) do
 
   create_table "adjectives", force: :cascade do |t|
     t.string   "base"
@@ -19,6 +19,14 @@ ActiveRecord::Schema.define(version: 20170329135358) do
     t.string   "fem_plural"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "hard_verbs", force: :cascade do |t|
+    t.integer  "verb_id"
+    t.integer  "difficulty"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["verb_id"], name: "index_hard_verbs_on_verb_id"
   end
 
   create_table "verbs", force: :cascade do |t|

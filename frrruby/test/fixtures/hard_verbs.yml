@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  verb: one
+  difficulty: 1
+
+two:
+  verb: two
+  difficulty: 1
